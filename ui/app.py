@@ -58,7 +58,7 @@ uploaded_files = st.file_uploader(
 )
 
 if uploaded_files and st.button("Generate Test Cases"):
-    with st.spinner("Processing... Please wait"):
+    with st.spinner("Our AI QA Team is working please wait"):
         context = create_project_context()
 
         save_and_extract(uploaded_files, context.upload_path)
@@ -80,11 +80,11 @@ if uploaded_files and st.button("Generate Test Cases"):
             output_path=context.output_path
         )
 
-    st.success("Test cases generated successfully!")
+    st.success("QA AI Test case created successfully!")
 
     with open(excel_path, "rb") as f:
         st.download_button(
-            label="⬇️ Download Test Case Excel",
+            label=" ⬇️  Download TraceGenAI_TestCases.xlsx",
             data=f,
             file_name=os.path.basename(excel_path),
             mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
