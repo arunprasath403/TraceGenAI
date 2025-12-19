@@ -23,4 +23,4 @@ def store_chunks(
 ):
     vectordb = get_vector_store(persist_path)
     vectordb.add_texts(texts=chunks, metadatas=metadatas)
-    # ❌ no persist() needed anymore
+    
