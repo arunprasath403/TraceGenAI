@@ -48,8 +48,8 @@ def save_and_extract(uploaded_files, upload_path):
             os.remove(file_path)
 
 
-st.set_page_config(page_title="AI Test Case Generator", layout="centered")
-st.title("🧪 AI Test Case Generator")
+st.set_page_config(page_title="SDLC Agentic AI Tester", layout="centered")
+st.title("TraceGenAI")
 
 uploaded_files = st.file_uploader(
     "Upload ZIP or Files",
