@@ -62,7 +62,7 @@ def run_requirements_agent(context: ProjectContext) -> RequirementsResponse:
         {"messages": [{"role": "user", "content": "Extract requirements"}]},
         context=context,
         config={"configurable": {"thread_id": context.project_id}},
-        stream=False   # ✅ THIS IS THE REAL FIX
+        stream=False   
     )
 
     return result["structured_response"]
