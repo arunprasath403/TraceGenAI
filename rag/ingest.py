@@ -19,17 +19,17 @@ def ingest_documents(project_context: dict):
             pages = load_document(file_path)
 
             if not pages:
-                continue  # 🚫 skip empty documents
+                continue  #  skip empty documents
 
             for page_no, page_text in enumerate(pages, start=1):
 
                 if not page_text.strip():
-                    continue  # 🚫 skip empty pages
+                    continue  #  skip empty pages
 
                 chunks = chunk_text(page_text)
 
                 if not chunks:
-                    continue  # 🚫 skip empty chunk results
+                    continue  #  skip empty chunk results
 
                 for chunk in chunks:
                     all_chunks.append(chunk)
