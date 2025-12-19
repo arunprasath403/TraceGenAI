@@ -7,25 +7,20 @@ The system is built with a **deterministic execution model**, **validation-first
 
 ---
 
-## Architecture Overview (End-to-End Flow)
+flowchart TD
+    A["Project / Business Context<br/>Requirements · Design · Codebase"]:::input
+    A --> B["Requirements Agent<br/>Functional & Non-Functional Extraction<br/>Structured JSON Output"]:::agent
+    B --> C["Design Agent<br/>Architecture Derivation<br/>Component Mapping"]:::agent
+    C --> D["Code Analysis Agent<br/>API Extraction<br/>UI & Flow Identification"]:::agent
+    D --> E["Test Case Generation Agent<br/>Enterprise Test Cases<br/>Full Traceability"]:::agent
+    E --> F["Validation Layer<br/>Schema Enforcement<br/>Mandatory Field Checks"]:::validation
+    F --> G["Excel Output<br/>QA-Ready XLSX<br/>Audit-Friendly Artifact"]:::output
 
-```mermaid
-flowchart LR
-    A[Project / Business Context<br/>• Requirements<br/>• Design Notes<br/>• Codebase]:::input
-    --> B[Requirements Agent<br/>• Extracts Functional & NFRs<br/>• Structured JSON Output]:::agent
-    --> C[Design Agent<br/>• Derives Architecture<br/>• Maps Components]:::agent
-    --> D[Code Analysis Agent<br/>• Extracts APIs<br/>• Identifies UI & Flows]:::agent
-    --> E[Test Case Generation Agent<br/>• Enterprise Test Cases<br/>• Full Traceability]:::agent
-    --> F[Validation Layer<br/>• Schema Enforcement<br/>• Mandatory Checks]:::validation
-    --> G[Excel Output<br/>• QA-Ready XLSX<br/>• Audit Friendly]:::output
+    classDef input fill:#D6EBFF,stroke:#003366,stroke-width:2px,color:#000000;
+    classDef agent fill:#E6DCFF,stroke:#2E0066,stroke-width:2px,color:#000000;
+    classDef validation fill:#FFE0B2,stroke:#8A4B00,stroke-width:2px,color:#000000;
+    classDef output fill:#C8F7C5,stroke:#1B5E20,stroke-width:2px,color:#000000;
 
-    classDef input fill:#e3f2fd,stroke:#1565c0,stroke-width:1px;
-    classDef agent fill:#ede7f6,stroke:#5e35b1,stroke-width:1px;
-    classDef validation fill:#fff3e0,stroke:#ef6c00,stroke-width:1px;
-    classDef output fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px;
-```
-
----
 
 ## How the System Works
 
