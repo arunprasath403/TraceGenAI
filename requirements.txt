@@ -23,19 +23,15 @@ openpyxl
 # Utilities
 tqdm
 
-langchain
-langgraph
+# Langgraph & Langchain
 langchain-community
 langchain-text-splitters
-openai
-sentence-transformers
-chromadb
-pypdf
-python-docx
-streamlit
-openpyxl
-python-dotenv
-tqdm
 langchain-huggingface
 langchain-chroma
 langchain-openai
+
+
+
+
+
+
