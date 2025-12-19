@@ -53,7 +53,7 @@ def run_code_agent(context: ProjectContext):
         {"messages": [{"role": "user", "content": "Extract code-level QA facts"}]},
         context=context,
         config={"configurable": {"thread_id": context.project_id}},
-        stream=False   # ✅ MUST be here (NOT inside config)
+        stream=False   
     )
 
     return result["structured_response"]
