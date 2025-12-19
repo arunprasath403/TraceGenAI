@@ -55,7 +55,7 @@ def run_design_agent(context: ProjectContext):
         {"messages": [{"role": "user", "content": "Extract system design"}]},
         context=context,
         config={"configurable": {"thread_id": context.project_id}},
-        stream=False   # ✅ MUST be here
+        stream=False   
     )
 
     return result["structured_response"]
