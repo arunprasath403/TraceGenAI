@@ -57,7 +57,7 @@ CODE:
         },
         context=context,
         config={"configurable": {"thread_id": context.project_id}},
-        stream=False   # ✅ REQUIRED (LangGraph default is streaming)
+        stream=False  # LangGraph default is streaming
     )
 
     return result["structured_response"]
