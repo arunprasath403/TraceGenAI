@@ -1,0 +1,41 @@
+# Core
+python-dotenv
+
+# LLM & Agents
+langchain
+langgraph
+openai
+
+# Embeddings & Vector DB
+sentence-transformers
+chromadb
+
+# Document Processing
+pypdf
+python-docx
+
+# UI
+streamlit
+
+# Excel Generation
+openpyxl
+
+# Utilities
+tqdm
+
+langchain
+langgraph
+langchain-community
+langchain-text-splitters
+openai
+sentence-transformers
+chromadb
+pypdf
+python-docx
+streamlit
+openpyxl
+python-dotenv
+tqdm
+langchain-huggingface
+langchain-chroma
+langchain-openai
