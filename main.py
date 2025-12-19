@@ -12,7 +12,7 @@ from config.logging_config import setup_logger
 
 if __name__ == "__main__":
 
-    # 🔹 Generate unique project
+    # Generate unique project
     project_id = f"project_{uuid.uuid4().hex[:8]}"
     context = resolve_project_context(project_id)
 
