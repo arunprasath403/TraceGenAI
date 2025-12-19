@@ -6,7 +6,7 @@
 The system is built with a **deterministic execution model**, **validation-first AI design**, and **security-aware architecture**, making it suitable for enterprise and compliance-driven environments.
 
 ---
-
+```
 flowchart TD
     A["Project / Business Context<br/>Requirements · Design · Codebase"]:::input
     A --> B["Requirements Agent<br/>Functional & Non-Functional Extraction<br/>Structured JSON Output"]:::agent
@@ -20,7 +20,7 @@ flowchart TD
     classDef agent fill:#E6DCFF,stroke:#2E0066,stroke-width:2px,color:#000000;
     classDef validation fill:#FFE0B2,stroke:#8A4B00,stroke-width:2px,color:#000000;
     classDef output fill:#C8F7C5,stroke:#1B5E20,stroke-width:2px,color:#000000;
-
+```
 
 ## How the System Works
 
